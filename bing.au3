@@ -1,4 +1,12 @@
 
+;Exit Function
+Func Terminate()
+	Exit
+EndFunc   ;==>Terminate
+
+;Press ESC to terminate script at any time, SUPER IMPORTANT
+HotKeySet("{ESC}", "Terminate")
+
 ;To start chrome
 Run(@ComSpec & " /C start chrome")
 Send("^t")
